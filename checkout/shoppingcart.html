@@ -315,7 +315,24 @@
             </table>
 
         </div>
-
+        <!-- Discount Banner -->
+        <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                  adobe.target.getOffer({
+                    mbox: 'homepage-offer',
+                    success: function(offer) {
+                      adobe.target.applyOffer({
+                        mbox: 'homepage-offer',
+                        offer: offer
+                      });
+                    },
+                    error: function(status, error) {
+                      console.error('Target error:', status, error);
+                    }
+                  });
+                });
+              </script>
+              
         <!--start footer-->
         <span class="footer">
 Copyright &#169 1996-2016 Adobe Digital Learning Services. All Rights Reserved.

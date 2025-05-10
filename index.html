@@ -67,26 +67,6 @@
 <body>
     <div id="superwrap">
         <div id="wrapper">
-            <!-- Target Banner for New Visitors -->
-            <script>
-                document.addEventListener('DOMContentLoaded', function () {
-                  adobe.target.getOffer({
-                    mbox: 'homepage-offer',
-                    success: function(offer) {
-                      adobe.target.applyOffer({
-                        mbox: 'homepage-offer',
-                        offer: offer
-                      });
-                    },
-                    error: function(status, error) {
-                      console.error('Target error:', status, error);
-                    }
-                  });
-                });
-              </script>
-              
-
-  
             <!--start logo and head-->
 
             <div class="head_logo">
