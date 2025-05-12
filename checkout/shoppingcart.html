@@ -297,7 +297,12 @@
 
             <div>
                 <form action="shipping1.html">
-                    <input type="submit" value="CHECKOUT NOW!" class="button" onclick="_satellite.track('begin_checkout')">
+                    <input type="submit" value="CHECKOUT NOW!" class="button" onclick="adobeDataLayer.push({
+                        event : 'begin_checkout',
+                        eventDetails : {
+                            'Link Name' : 'checkout'
+                        }
+                    })">
                 </form>
             </div>
 

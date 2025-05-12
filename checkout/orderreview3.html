@@ -237,7 +237,14 @@
                 <tr>
                     <td>
                         <form action="confirmreceipt4.html">
-                            <input type="submit" value="PURCHASE" class="button" onclick="_satellite.track('purchase')">
+                            <input type="submit" value="PURCHASE" class="button" onclick="adobeDataLayer.push(
+                                {
+                                    event : 'purchase',
+                                    eventDetails : {
+                                        'Link Name' : 'purchase'
+                                    }
+                                }
+                            )">
                         </form>
                     </td>
                 </tr>
